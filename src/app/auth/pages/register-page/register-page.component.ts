@@ -1,15 +1,10 @@
-import { ChangeDetectionStrategy, Component } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-register-page',
-  standalone: true,
-  imports: [],
-  template: `<p>registerPage works!</p>`,
-  styles: `
-    :host {
-      display: block;
-    }
-  `,
-  changeDetection: ChangeDetectionStrategy.OnPush,
+  templateUrl: './register-page.component.html',
+  styles: [
+  ]
 })
-export class RegisterPageComponent { }
+export class RegisterPageComponent {
+
+}

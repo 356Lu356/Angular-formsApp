@@ -6,14 +6,14 @@ const routes: Routes = [
   {
     path: '',
     children: [
-      { path: 'sing-up', component: RegisterPageComponent },
-      { path: '**', redirectTo: 'sing-up' },
-    ],
-  },
+      { path: 'sign-up', component: RegisterPageComponent },
+      { path: '**', redirectTo: 'sign-up' },
+    ]
+  }
 ];
 
 @NgModule({
   imports: [RouterModule.forChild(routes)],
-  exports: [RouterModule],
+  exports: [RouterModule]
 })
-export class AuthRoutingModule {}
+export class AuthRoutingModule { }
